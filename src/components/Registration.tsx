@@ -63,7 +63,7 @@ const Registration = () => {
             <div className="alert alert-dark" role="alert" style={{ background: "#0c1019", color: "#c9ced6" ,margin: "auto" , marginTop:"4%" }}>Already have an account?  <Link to="/login">Sign In</Link>
             </div>
             {password !== repeatPassword ? <div style={{ "marginLeft": "35%", "marginRight": "35%", "marginBottom": "10%" }} className="alert alert-danger"> Passwords do not match!!!</div> : <div></div>}
-            {state.isAuth ? <meta http-equiv="refresh" content="0;URL=https://taskappcoursework.herokuapp.com/login"/> :<div></div>}
+            {state.isAuth ? <meta http-equiv="refresh" content="0;URL=https://taskapp-eight.vercel.app/login"/> :<div></div>}
             </div>
         </div>
             );

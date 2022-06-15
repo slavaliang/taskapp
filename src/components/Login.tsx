@@ -38,7 +38,7 @@ const Login = () => {
                 </div>
                 <button style={{ width: "100%" }} type="submit" className="btn btn-success " >Sign In</button>
             </form>
-            {!state.isAuth ? <div></div> : <meta http-equiv="refresh" content="0;URL=https://taskappcoursework.herokuapp.com/home" />}
+            {!state.isAuth ? <div></div> : <meta http-equiv="refresh" content="0;URL=https://taskapp-eight.vercel.app/home" />}
             <div className="alert alert-dark" role="alert" style={{ background: "#0c1019", color: "#c9ced6", margin: "auto", marginTop: "4%" }}>New to TaskApp? <Link to="/registration">Create an account.</Link>
             </div>
         </div>
