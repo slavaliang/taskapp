@@ -18,11 +18,15 @@ export const TaskForm = () => {
         setContent(event.target.value);
     }
     return (
-        <form onSubmit={handleSubmit} style={{ "marginLeft": "10%", "marginRight": "10%" }} >
-            <h2 style={{ "marginTop": "20px" ,color:"white" }}>Task</h2>
-            <input className="form-control" style={{ "height": "100px", "border": "1px solid #1E90FF" }} onChange={handleChangeInputValue}></input>
-            <h2></h2>
-            <button style={{"marginBottom": "30px", "marginRight": "30px", "marginTop": "10px" }} className="btn btn-success">Add to list</button>
-        </form >
+            <form   onSubmit={handleSubmit} style={{ width: "70%", margin: "30px", height: "30%" }}>
+
+                <div className="input-group mb-3" style={{ height: "60%" }} >
+                    <input type="text" className="form-control" placeholder="..." aria-label="Recipient's username" aria-describedby="basic-addon2" onChange={handleChangeInputValue}/>
+                    <span className="input-group-text" id="basic-addon2">Content</span>
+                </div>
+
+                <button className="btn btn-primary" style={{ width: "100%" }}>Create</button>
+            </form>
+            
     );
 }

@@ -13,7 +13,7 @@ export const TaskList = () => {
     }
     var k = 0;
     return (
-        <>
+        <div style={{ display: "flex", justifyContent: "space-between", maxWidth: "70%", padding: '0', wordBreak: "break-all", maxHeight: "50%" }}>
             {state.tasks.map(task => (
                 <TaskItem
                     key={"task" + String(k++)}
@@ -23,6 +23,6 @@ export const TaskList = () => {
                 />
             ))
             }
-        </>
+        </div>
     );
 }
