@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BASE_URL = "http://taskapp.vercel.app/login";
+export const BASE_URL = "http://taskapp.vercel.app";
 const $api = axios.create({
     baseURL: BASE_URL
 })
